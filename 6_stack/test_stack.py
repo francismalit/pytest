@@ -30,7 +30,9 @@ class TestStack(unittest.TestCase):
 
     def test_popping_empty_stack_returns_None(self):
         ''' special case of popping an empty stack should return None '''
-        pass
+        stack = Stack()
+        assert 0 == stack.get_size()
+        self.assertEqual(stack.pop(), None)
 
     def test_when_1_pushed_pop_returns_1(self):
         ''' test pushing and popping 1 to stack '''
