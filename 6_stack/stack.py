@@ -1,14 +1,7 @@
-# from abc import ABCMeta
-import abc
 from abc import abstractmethod
 
 
 class Stack:
-    __metaclass__ = abc.ABCMeta
-
-    # @property
-    # def prop(self):
-    #     pass
 
     def __init__(self):
         self.__stack = []
@@ -28,6 +21,3 @@ class Stack:
     @abstractmethod
     def area(self):
         pass
-
-
-# from datetime import datetime, timedelta
