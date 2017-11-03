@@ -22,7 +22,11 @@ class TestStack(unittest.TestCase):
 
     def test_pop_decreases_stack_size(self):
         ''' implement pop that decreases stack size '''
-        pass
+        stack = Stack()
+        stack.push(1)
+        assert stack.get_size() == 1
+        stack.pop()
+        self.assertEqual(stack.get_size(), 0)
 
     def test_popping_empty_stack_returns_None(self):
         ''' special case of popping an empty stack should return None '''
