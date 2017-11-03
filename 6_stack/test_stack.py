@@ -14,7 +14,9 @@ class TestStack(unittest.TestCase):
     def test_push_increases_stack_size(self):
         ''' implement push method that takes one elemet as argument
         and increases stack size'''
-        pass
+        stack = Stack()
+        stack.push(1)
+        self.assertEqual(stack.get_size(), 1)
 
     ''' Do you have any duplication in your tests? How to remove it? '''
 
